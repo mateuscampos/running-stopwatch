@@ -8,12 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		7B1DBFEC201D209800937438 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1DBFEB201D209800937438 /* AppDelegate.swift */; };
-		7B1DBFEE201D209800937438 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1DBFED201D209800937438 /* ViewController.swift */; };
-		7B1DBFF1201D209800937438 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B1DBFEF201D209800937438 /* Main.storyboard */; };
 		7B1DBFF3201D209800937438 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B1DBFF2201D209800937438 /* Assets.xcassets */; };
 		7B1DBFF6201D209800937438 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B1DBFF4201D209800937438 /* LaunchScreen.storyboard */; };
 		7B1DC001201D209800937438 /* running_stopwatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1DC000201D209800937438 /* running_stopwatchTests.swift */; };
 		7B1DC00C201D209800937438 /* running_stopwatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1DC00B201D209800937438 /* running_stopwatchUITests.swift */; };
+		7B1DC01D201D230C00937438 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1DC01C201D230C00937438 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +35,6 @@
 /* Begin PBXFileReference section */
 		7B1DBFE8201D209800937438 /* running-stopwatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "running-stopwatch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B1DBFEB201D209800937438 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7B1DBFED201D209800937438 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7B1DBFF0201D209800937438 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7B1DBFF2201D209800937438 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B1DBFF5201D209800937438 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B1DBFF7201D209800937438 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +44,7 @@
 		7B1DC007201D209800937438 /* running-stopwatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "running-stopwatchUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B1DC00B201D209800937438 /* running_stopwatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = running_stopwatchUITests.swift; sourceTree = "<group>"; };
 		7B1DC00D201D209800937438 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B1DC01C201D230C00937438 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +95,8 @@
 		7B1DBFEA201D209800937438 /* running-stopwatch */ = {
 			isa = PBXGroup;
 			children = (
-				7B1DBFEB201D209800937438 /* AppDelegate.swift */,
-				7B1DBFED201D209800937438 /* ViewController.swift */,
-				7B1DBFEF201D209800937438 /* Main.storyboard */,
-				7B1DBFF2201D209800937438 /* Assets.xcassets */,
-				7B1DBFF4201D209800937438 /* LaunchScreen.storyboard */,
-				7B1DBFF7201D209800937438 /* Info.plist */,
+				7B1DC01A201D22D100937438 /* Home */,
+				7B1DC019201D22A600937438 /* Shared */,
 			);
 			path = "running-stopwatch";
 			sourceTree = "<group>";
@@ -123,6 +117,33 @@
 				7B1DC00D201D209800937438 /* Info.plist */,
 			);
 			path = "running-stopwatchUITests";
+			sourceTree = "<group>";
+		};
+		7B1DC019201D22A600937438 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				7B1DBFF2201D209800937438 /* Assets.xcassets */,
+				7B1DBFF7201D209800937438 /* Info.plist */,
+				7B1DBFF4201D209800937438 /* LaunchScreen.storyboard */,
+				7B1DBFEB201D209800937438 /* AppDelegate.swift */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
+		7B1DC01A201D22D100937438 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7B1DC01B201D22EE00937438 /* Views */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		7B1DC01B201D22EE00937438 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7B1DC01C201D230C00937438 /* HomeViewController.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,7 +258,6 @@
 			files = (
 				7B1DBFF6201D209800937438 /* LaunchScreen.storyboard in Resources */,
 				7B1DBFF3201D209800937438 /* Assets.xcassets in Resources */,
-				7B1DBFF1201D209800937438 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,8 +282,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B1DBFEE201D209800937438 /* ViewController.swift in Sources */,
 				7B1DBFEC201D209800937438 /* AppDelegate.swift in Sources */,
+				7B1DC01D201D230C00937438 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,14 +319,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7B1DBFEF201D209800937438 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7B1DBFF0201D209800937438 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7B1DBFF4201D209800937438 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
