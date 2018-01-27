@@ -1,7 +1,0 @@
-xcodeproj: Running Stopwatch.xcodeproj
-workspace:
-source_directory: Running Stopwatch
-output_directory: slather-report
-scheme: Running Stopwatch
-coverage_service: html
-ignore: "../**/*/Xcode*"
