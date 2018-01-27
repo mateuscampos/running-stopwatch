@@ -20,4 +20,18 @@ class HomeViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupNavigation()
+    }
+    
+    func setupNavigation() {
+        self.title = "Stopwatch"
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addTapped))
+    }
+    
+    func addTapped() {
+        
+    }
+    
 }
