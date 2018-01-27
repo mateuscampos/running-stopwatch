@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  Running Stopwatch
+//  running-stopwatch
 //
 //  Created by Mateus Campos on 27/01/2018.
 //  Copyright © 2018 Mateus Campos. All rights reserved.

@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Running Stopwatch.xcodeproj">
+      location = "self:running-stopwatch.xcodeproj">
    </FileRef>
 </Workspace>

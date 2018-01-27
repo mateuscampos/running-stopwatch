@@ -1,15 +1,15 @@
 //
-//  Running_StopwatchTests.swift
-//  Running StopwatchTests
+//  running_stopwatchTests.swift
+//  running-stopwatchTests
 //
 //  Created by Mateus Campos on 27/01/2018.
 //  Copyright © 2018 Mateus Campos. All rights reserved.
 //
 
 import XCTest
-@testable import Running_Stopwatch
+@testable import running_stopwatch
 
-class Running_StopwatchTests: XCTestCase {
+class running_stopwatchTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
